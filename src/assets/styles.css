@@ -1,0 +1,185 @@
+.container {
+  max-width: 56rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-7 {
+  margin-top: 3.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.border-b {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.btn {
+  position: relative;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  margin: 15px;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.indigo {
+  background-color: #5a67d8;
+}
+
+@font-face {
+  font-family: system;
+  font-style: normal;
+  font-weight: 300;
+  src: local('.SFNSText-Light'), local('.HelveticaNeueDeskInterface-Light'),
+    local('.LucidaGrandeUI'), local('Ubuntu Light'), local('Segoe UI Light'),
+    local('Roboto-Light'), local('DroidSans'), local('Tahoma');
+}
+
+#app {
+  font-family: 'system';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
+.css-tooltip {
+  position: relative;
+  text-align: center;
+  font-family: 'system';
+}
+
+.css-tooltip::after {
+  background-color: #333;
+  border-radius: 4px;
+  color: #fff;
+  display: none;
+  padding: 10px 35px;
+  position: absolute;
+  text-align: center;
+  z-index: 999;
+}
+
+.css-tooltip::before {
+  background-color: #333;
+  content: ' ';
+  display: none;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  z-index: 999;
+}
+
+.css-tooltip:hover::after {
+  display: block;
+}
+
+.css-tooltip:hover::before {
+  display: block;
+}
+
+.css-tooltip.css-top::after {
+  content: attr(data-tip);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 10px));
+}
+
+.css-tooltip.css-top::before {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+}
+
+.css-tooltip.css-bottom::after {
+  content: attr(data-tip);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 10px));
+}
+
+.css-tooltip.css-bottom::before {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 5px)) rotate(45deg);
+}
+
+.css-tooltip.css-right::after {
+  content: attr(data-tip);
+  top: 0;
+  right: 0;
+  transform: translateX(calc(100% + 10px));
+}
+
+.css-tooltip.css-right::before {
+  top: 50%;
+  right: 0;
+  transform: translate(calc(100% + 5px), -50%) rotate(45deg);
+}
+
+.css-tooltip.css-left::after {
+  content: attr(data-tip);
+  top: 0;
+  left: 0;
+  transform: translateX(calc(-100% - 10px));
+}
+
+.css-tooltip.css-left::before {
+  top: 50%;
+  left: 0;
+  transform: translate(calc(-100% - 5px), -50%) rotate(45deg);
+}
+
+.d-tooltip {
+  position: absolute;
+  background-color: #333;
+  content: ' ';
+  width: 10rem;
+  height: 2.5rem;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.top {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 10px));
+}
+.bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, calc(100% + 10px));
+}
+.left {
+  top: 0;
+  left: 0;
+  transform: translateX(calc(-100% - 10px));
+}
+.right {
+  top: 0;
+  right: 0;
+  transform: translateX(calc(100% + 10px));
+}
+
+.d-tooltip.top::before {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, calc(-100% - 5px)) rotate(45deg);
+}
